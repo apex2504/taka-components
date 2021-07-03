@@ -2,9 +2,8 @@ from .components import *
 from .handler import *
 from .interact import *
 from .exceptions import *
-from copy import deepcopy
 
-def create_action_row(components=[]):
+def create_action_row(components=None):
     return ActionRow(components)
 
 def create_dropdown(**kwargs):
