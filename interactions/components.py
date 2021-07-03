@@ -212,8 +212,8 @@ class Button(Component):
 
 
 class ActionRow:
-    def __init__(self, components=[]):
-        self.components = components
+    def __init__(self, components=None):
+        self.components = components or []
         self.buttons = components #backwards compat
 
 
