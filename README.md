@@ -33,13 +33,13 @@ async def button_example_command(ctx):
     ar = interactions.create_action_row() #create an ActionRow which is essentially a container for components
     ar.add_component(interactions.create_button(label='Button', style=interactions.ButtonType.Primary)) #add a Button to the ActionRow
 
-    m = await self.bot.handler.send(
+    m = await bot.handler.send(
         channel = ctx.channel,
         content = 'Click the button!',
         components = [ar]
     )
 
-    i = await self.bot.wait_for('button_press', check=lambda b: b.message.id==m.id and b.member.id==ctx.author.id)
+    i = await bot.wait_for('button_press', check=lambda b: b.message.id==m.id and b.member.id==ctx.author.id)
     await i.respond('Well done, you clicked it!')
  
  
