@@ -89,7 +89,8 @@ class Utils:
                     comps.append(Utils.create_button(component))
                 if component['type'] == 3:
                     comps.append(Utils.create_dropdown(component))
-                rows.append(ActionRow(comps))
+
+            rows.append(ActionRow(comps))
 
         return rows
 
