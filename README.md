@@ -1,4 +1,9 @@
 # taka-components
+
+### Pretty much none of this is in use anymore. It has been rewritten and integrated into Taka's core library. Don't use it.
+
+[This code remains here on GitHub both for posterity and for me to look back on in the future and laugh at myself. Maybe I'll remove it, maybe I won't. But the code was never the important part.](https://youtu.be/BxV14h0kFs0?t=609)
+
 Extremely basic discord.py message components handler made for Taka. Slash commands are not supported at all despite the name interactions.
 
 I don't actually intend on providing support on GitHub or even documentation for this and I don't expect you to use it in your projects.
